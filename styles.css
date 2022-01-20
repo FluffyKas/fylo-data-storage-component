@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+
+/* Colors */
+
+/* Primary colors */
+
+-clr-gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+/* Neutral colors */
+
+--clr-light-blue-100: hsl(243, 100%, 93%);
+--clr-light-blue-300: hsl(229, 7%, 55%);
+--clr-drk-blue-600: hsl(228, 56%, 26%);
+--clr-drk-blue-900: hsl(229, 57%, 11%);
+}
+
+/* GENERAL STYLES */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
