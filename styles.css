@@ -2,18 +2,18 @@
 
 :root {
 
-/* Colors */
+  /* Colors */
 
-/* Primary colors */
+  /* Primary colors */
 
---clr-gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  --clr-gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
 
-/* Neutral colors */
+  /* Neutral colors */
 
---clr-light-blue-100: 243, 100%, 93%;
---clr-light-blue-300: 229, 7%, 55%;
---clr-drk-blue-600: 228, 56%, 26%;
---clr-drk-blue-900: 229, 57%, 11%;
+  --clr-light-blue-100: 243, 100%, 93%;
+  --clr-light-blue-300: 229, 7%, 55%;
+  --clr-drk-blue-600: 228, 56%, 26%;
+  --clr-drk-blue-900: 229, 57%, 11%;
 }
 
 /* GENERAL STYLES */
@@ -117,16 +117,28 @@ main {
 .progress-bar::before {
   content: '';
   background: red;
-  background: rgb(255,163,153);
-  background: -moz-linear-gradient(90deg, rgba(255,163,153,1) 15%, rgba(255,77,151,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(255,163,153,1) 15%, rgba(255,77,151,1) 100%);
-  background: linear-gradient(90deg, rgba(255,163,153,1) 15%, rgba(255,77,151,1) 100%);
+  background: rgb(255, 163, 153);
+  background: -moz-linear-gradient(90deg, rgba(255, 163, 153, 1) 15%, rgba(255, 77, 151, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255, 163, 153, 1) 15%, rgba(255, 77, 151, 1) 100%);
+  background: linear-gradient(90deg, rgba(255, 163, 153, 1) 15%, rgba(255, 77, 151, 1) 100%);
   border-radius: 35px;
   height: 75%;
   top: 50%;
   left: .175rem;
   transform: translateY(-50%);
   width: 81.5%;
+  position: absolute;
+}
+
+.progress-bar::after {
+  content: '';
+  background: white;
+  border-radius: 50%;
+  height: .8rem;
+  top: 50%;
+  left: 79%;
+  transform: translateY(-50%);
+  width: .8rem;
   position: absolute;
 }
 
@@ -161,4 +173,37 @@ main {
   color: hsl(var(--clr-drk-blue-900));
   font-size: 2.5rem;
   font-weight: 700;
+}
+
+@media (min-width: 56rem) {
+
+  body {
+    background: url(images/bg-desktop.png), hsl(var(--clr-drk-blue-900));
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  main {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 60rem;
+  }
+
+  .top {
+    width: 40%;
+  }
+
+  .bottom {
+    position: relative;
+    width: 60%;
+  }
+
+  .popup {
+    position: absolute;
+    top: -3rem;
+    right: 1rem;
+  }
 }
