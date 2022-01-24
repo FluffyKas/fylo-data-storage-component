@@ -81,6 +81,12 @@ main {
   place-items: center;
 }
 
+.functions li button {
+  all: unset;
+  display: grid;
+  place-items: center;
+}
+
 .functions li img {
   transform: scale(1);
   transition: all .2s ease;
