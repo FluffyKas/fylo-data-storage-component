@@ -34,6 +34,7 @@ body {
   background: url(images/bg-mobile.png), hsl(var(--clr-drk-blue-900));
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
   color: hsl(var(--clr-light-blue-100));
   font-family: 'Raleway', sans-serif;
   min-height: 100vh;
@@ -96,6 +97,7 @@ main {
   background: hsl(var(--clr-drk-blue-600));
   border-radius: 10px;
   padding: 2rem;
+  position: relative;
 }
 
 .data-text {
@@ -150,14 +152,17 @@ main {
   padding-top: .5rem;
 }
 
-.popup {
+.data-bubble {
   background: white;
   border-radius: 10px;
   max-width: 11rem;
   padding: 1rem .5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.popup-text {
+.data-bubble-text {
   color: hsl(var(--clr-light-blue-300));
   font-size: .8rem;
   letter-spacing: 1px;
@@ -169,7 +174,7 @@ main {
   justify-content: center;
 }
 
-.popup-text span {
+.data-bubble-text span {
   color: hsl(var(--clr-drk-blue-900));
   font-size: 2.5rem;
   font-weight: 700;
@@ -197,13 +202,24 @@ main {
   }
 
   .bottom {
-    position: relative;
     width: 60%;
   }
 
-  .popup {
-    position: absolute;
+  .data-bubble {
     top: -3rem;
-    right: 1rem;
+    right: 0;
+    transform: none;
   }
+
+  .data-bubble::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -1.5rem;
+    height: 2rem;
+    width: 2rem;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+  }
+
 }
