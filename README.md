@@ -47,6 +47,40 @@ Users should be able to:
 
 ### What I learned
 
+*Using HSL differently in custom properties*
+
+I used this challenge to experiment with something cool I've seen the other day (link to Kevin Powell's video in Useful resources). I tend to start  my projects by declaring custom properties at the top like this:
+
+````
+:root {
+--clr-drk-blue-600: hsl(228, 56%, 26%);
+--clr-drk-blue-900: hsl(229, 57%, 11%);
+}
+
+````
+
+And then I refer to these HSL values as custom properties later. This doesn't leave much room for creativity however, and as soon as you want to change hue, opacity, etc, these custom properties become useless. So following this awesome video, this time I declared these properties a bit differently:
+
+````
+
+:root {
+--clr-drk-blue-600: 228, 56%, 26%;
+--clr-drk-blue-900: 229, 57%, 11%;
+}
+
+````
+
+Just omitting hsl() from them allowed me to manipulate them to my liking:
+
+````
+
+.progress-bar {
+  background: hsl(var(--clr-drk-blue-900), .5);
+}
+
+````
+
+Not a huge deal, but since I face this problem kind of frequently, I'm going to get into the habit of doing this in future projects. ^^
 
 ### Continued development
 
