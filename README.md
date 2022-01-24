@@ -25,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
+![](./screenshots/fylo-data-storage-mobile.png)
+![](./screenshots/fylo-data-storage-desktop.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+[live site URL](https://fylo-data-storage-component-kas.netlify.app/)
 
 ## My process
 
