@@ -39,11 +39,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 
@@ -59,7 +55,7 @@ I used this challenge to experiment with something cool I've seen the other day 
 
 ````
 
-And then I refer to these HSL values as custom properties later. This doesn't leave much room for creativity however, and as soon as you want to change hue, opacity, etc, these custom properties become useless. So following this awesome video, this time I declared these properties a bit differently:
+And then I refer to these HSL values as custom properties later. This doesn't leave much room for creativity however, and as soon as you want to change lightness, opacity, etc, these custom properties become useless. So following this awesome video, this time I declared these properties a bit differently:
 
 ````
 
