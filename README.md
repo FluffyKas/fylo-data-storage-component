@@ -47,6 +47,7 @@ Users should be able to:
 
 I used this challenge to experiment with something cool I've seen the other day (link to Kevin Powell's video in Useful resources). I tend to start  my projects by declaring custom properties at the top like this:
 
+
 ````
 :root {
 --clr-drk-blue-600: hsl(228, 56%, 26%);
@@ -85,6 +86,7 @@ Not a huge deal, but since I face this problem kind of frequently, I'm going to 
 
 - [CSS Gradient generator](https://cssgradient.io/)
 - [Kevin Powell's video on custom properties and HSL](https://www.youtube.com/watch?v=IHaT_rjC2gM) - A great video on a new way of using custom properties and HSL
+- [Wev Dev Simplidied on CSS animations](https://www.youtube.com/watch?v=YszONjKpgg4)
 
 ## Author
 
